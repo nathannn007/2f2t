@@ -1,49 +1,48 @@
-* {
+*{
     margin: 0;
     padding: 0;
-
 }
 body {
-    background-color: aquamarine;
-
+background-color:rgb(248, 241, 250) ;
 }
-.item {
-    width: 50px;
+.item{
+    width: 370px;
     height: 100px;
-    background-color: rgb(245, 245, 148);
+    background-color: deeppink;
+    color:antiquewhite;
     margin: 10px;
 }
-.conteudo {
+.conteudo{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20% ;
-
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    
 }
-.barra {
-    background-color: aqua;
+.barra{
+    background-color: rgb(174, 6, 252);
     height: 20vh;
     grid-area: barra;
 }
-.principal {
-    background-color: rgb(222, 187, 255);
-    height: 40vh;
+.principal{
+    background-color: rgb(123, 4, 192);
+    height: 60vh;
     grid-area: principal;
 }
-.lado {
-    background-color: rgb(101, 176, 219);
+.lado{
+    background-color: rgb(87, 6, 134);
     height: 60vh;
-    grid-area: lado;
+    grid-area: lado
 }
-.rodape {
-    background-color: rgb(47, 33, 59);
+.rodape{
+    background-color: rgb(178, 141, 187);
     height: 20vh;
     grid-area: rodape;
 }
 .meu-site {
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-areas:
-                    "barra barra"                  
+    grid-template-areas: 
+                    "barra barra"
                     "lado principal"
-                    "lado rodape";
+                    "rodape rodape";
 
 }
