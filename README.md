@@ -1,2 +1,2 @@
-# Segundo Trimestre - mobile-first
-Nathan Eduardo - 28
+# segundo trimestre - mobile-first
+Beatriz Beanhossi Lopes - N°10

@@ -100,8 +100,6 @@ ul{
     display: none;
 } /* Hide checkbox */
 
-
-
 /* Toggle menu icon */
 .side-menu:checked ~ nav{
     max-height: 100%;
@@ -117,11 +115,43 @@ ul{
     transform: rotate(45deg);
     top:0;
 }
+.conteudo{
+    width: 100vw;
+    padding: 7px;
+}
 
+#droga {
+    display: none;
+}
 
+.geral{
+    width: 100vw;
+}
 
-/* Responsiveness */
-@media (min-width: 768px) {
+.item1 {
+    width: 100%;
+}
+
+.rodape {
+    width: 100vw;
+    text-align: center;
+    color: #110f0f;
+    background-color: rgb(197, 175, 212);
+}
+
+.conteudo {
+    background-color: rgb(186, 186, 240);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "geral geral";
+}
+
+.geral {
+    width: 100vw;
+    grid-area: "geral";
+}
+
+@media (min-width: 820px) {
     .nav{
         max-height: none;
         top: 0;
@@ -147,4 +177,67 @@ ul{
         width: 15vh;
         margin: 5px;
     }
+    .conteudo {
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+         "geral geral";
+    }
+    .conteudo {
+        display: flex;
+        width: 100vw;
+
+    }
+    .geral {
+        height: 100%;
+        padding: 5px;
+        width: 10vw;
+
+    }
+
+    .item1 {
+        display: block;
+        text-align: end;
+        height: 30vh;
+        width: 30vw;
+    }
+    #drogas {
+        display: block;
+        width: 50%;
+    }
+    
+
+}
+
+@media (min-width: 1024px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+
+    #logo {
+        width: 15vh;
+        margin: 5px;
+    }
+    .conteudo {
+        grid-template-columns: 33% 34% 33%;
+        grid-template-areas: 
+         "geral geral geral";
+    }
+
 }
